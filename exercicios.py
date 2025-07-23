@@ -1,4 +1,5 @@
 import math
+import statistics
 
 # #### Inteiros (`int`)
 
@@ -18,10 +19,10 @@ import math
 
 # 3. Desenvolva um programa que multiplique dois números fornecidos pelo usuário e mostre o resultado.
 
-numero_1 = int(input("Insira  um número inteiro: "))
-numero_2 = int(input("Insira outro número inteiro: "))
-resultado_multiplicacao = numero_1 * numero_2
-print(f"O resultado da multiplicação entre os números é {resultado_multiplicacao}")
+# numero_1 = int(input("Insira  um número inteiro: "))
+# numero_2 = int(input("Insira outro número inteiro: "))
+# resultado_multiplicacao = numero_1 * numero_2
+# print(f"O resultado da multiplicação entre os números é {resultado_multiplicacao}")
 
 # 4. Faça um programa que peça dois números inteiros e imprima a divisão inteira do primeiro pelo segundo.
 
@@ -37,12 +38,41 @@ print(f"O resultado da multiplicação entre os números é {resultado_multiplic
 
 # 5. Escreva um programa que calcule o quadrado de um número fornecido pelo usuário.
 
+# numero_usuario = int(input("Insira um número inteiro: "))
+# CTE_POTENCIA = 2
+# resultado = numero_usuario ** CTE_POTENCIA
+# print(f"O número {numero_usuario} elevado ao quadrado é {resultado}.")
+
 # #### Números de Ponto Flutuante (`float`)
 
 # 6. Escreva um programa que receba dois números flutuantes e realize sua adição.
+
+# numero_1 = float(input("Insira um número: "))
+# numero_2 = float(input("Insira outro número: "))
+# resultado = numero_1 + numero_2
+# print(f"A soma dos números {numero_1} e {numero_2} é {resultado}.")
+
 # 7. Crie um programa que calcule a média de dois números flutuantes fornecidos pelo usuário.
+
+# numero_1 = float(input("Insira um número: "))
+# numero_2 = float (input("Insira outro número: "))
+# numbers = [numero_1, numero_2]
+# resultado = statistics.mean(numbers)
+# print(f"A média dos números é {resultado}")
+
 # 8. Desenvolva um programa que calcule a potência de um número (base e expoente fornecidos pelo usuário).
+
+# base_usuario = float(input("Insira um número para a base: "))
+# expoente_usuario = float(input("Insira um número para o expoente: "))
+# resultado = base_usuario ** expoente_usuario
+# print(f"{base_usuario}^({expoente_usuario}) = {resultado}")
+
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
+
+temp_celsius = float(input("Digite uma temperatura em Celsius: "))
+temp_fahrenheit = (temp_celsius*(9/5)) + 32
+print(f"{temp_celsius}°C equivale à {temp_fahrenheit:.2f}°F")
+
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
 # raio_do_circulo = float(input("Digite o raio do círculo: "))
