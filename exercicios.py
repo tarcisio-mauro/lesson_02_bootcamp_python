@@ -69,9 +69,9 @@ import statistics
 
 # 9. Faça um programa que converta a temperatura de Celsius para Fahrenheit.
 
-temp_celsius = float(input("Digite uma temperatura em Celsius: "))
-temp_fahrenheit = (temp_celsius*(9/5)) + 32
-print(f"{temp_celsius}°C equivale à {temp_fahrenheit:.2f}°F")
+# temp_celsius = float(input("Digite uma temperatura em Celsius: "))
+# temp_fahrenheit = (temp_celsius*(9/5)) + 32
+# print(f"{temp_celsius}°C equivale à {temp_fahrenheit:.2f}°F")
 
 # 10. Escreva um programa que calcule a área de um círculo, recebendo o raio como entrada.
 
@@ -82,17 +82,37 @@ print(f"{temp_celsius}°C equivale à {temp_fahrenheit:.2f}°F")
 # #### Strings (`str`)
 
 # 11. Escreva um programa que receba uma string do usuário e a converta para maiúsculas.
+
+# string1_usuario = str(input("Digite um texto: "))
+# string1_maiuscula = string1_usuario.upper()
+# print(f"Texto em letras maiúsculas: {string1_maiuscula}")
+
 # 12. Crie um programa que receba o nome completo do usuário e imprima o nome com todas as letras minúsculas.
+
+# nome_usuario = str(input("Digite o seu nome completo: "))
+# nome_minusculo = nome_usuario.lower()
+# print(f"Nome minúsculo: {nome_minusculo}")
+
 # 13. Desenvolva um programa que peça ao usuário para inserir uma frase e, em seguida, imprima esta frase sem espaços em branco no início e no final.
+
+# texto_usuario = str(input("Digite um texto com espaços no início ou final: "))
+# texto_trimmed = texto_usuario.strip()
+# print(f"Texto corrigido: {texto_trimmed}")
+
 # 14. Faça um programa que peça ao usuário para digitar uma data no formato "dd/mm/aaaa" e, em seguida, imprima o dia, o mês e o ano separadamente.
 
-#data_do_usuario = input("Insira uma data no formato dd/mm/aaaa: ")
-#lista_dia_mes_ano = data_do_usuario.split("/")
-#print(f"Dia: {lista_dia_mes_ano[0]}")
-#print(f"Mês: {lista_dia_mes_ano[1]}")
-#print(f"Ano: {lista_dia_mes_ano[2]}")
+# data_do_usuario = input("Insira uma data no formato dd/mm/aaaa: ")
+# lista_dia_mes_ano = data_do_usuario.split("/")
+# print(f"Dia: {lista_dia_mes_ano[0]}")
+# print(f"Mês: {lista_dia_mes_ano[1]}")
+# print(f"Ano: {lista_dia_mes_ano[2]}")
 
 # 15. Escreva um programa que concatene duas strings fornecidas pelo usuário.
+
+# texto1_usuario = str(input("Digite o primeiro texto: "))
+# texto2_usuario = str(input("Digite o segundo texto: "))
+# texto_concatenado = texto1_usuario + texto2_usuario
+# print(f"Esse é o texto concatenado: {texto_concatenado}")
 
 # #### Booleanos (`bool`)
 
