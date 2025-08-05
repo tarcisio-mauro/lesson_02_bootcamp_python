@@ -152,22 +152,33 @@ import statistics
 # bool1 = valor1 == "true"
 # bool2 = valor2 == "true"
 
-# resultado_or = valor1 and valor2
+# resultado_or = bool1 and bool2
 # print(f"O resultado do OR lógico é {resultado_or}")
 
 # 18. Desenvolva um programa que peça ao usuário para inserir um valor booleano e, em seguida, inverta esse valor.
 
-valor1 = input("Digite True or False: ").strip().lower()
-bool1 = valor1 == "true"
-valor1_invertido = not bool1
-print(f"O valor invertido é {valor1_invertido}")
-
-# valor_usuario = bool(input("Digite uma expressão verdadeira ou falsa: "))
-# print(valor_usuario)
-
+# valor1 = input("Digite True or False: ").strip().lower()
+# bool1 = valor1 == "true"
+# valor1_invertido = not bool1
+# print(f"O valor invertido é {valor1_invertido}")
 
 # 19. Faça um programa que compare se dois números fornecidos pelo usuário são iguais.
+
+# value1 = input("Digite um número: ")
+# value2 = input("Digite outro número: ")
+
+# result_equal_test = value1 == value2
+
+# print(f"{value1} equals {value2} statement is: {result_equal_test}")
+
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
+
+value1 = input("Digite um número: ")
+value2 = input("Digite outro número: ")
+
+result_diff_test = value1 != value2
+
+print(f"{value1} differs from {value2} statement is: {result_diff_test}")
 
 # #### try-except e if
 
