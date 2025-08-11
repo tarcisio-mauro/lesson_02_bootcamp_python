@@ -173,17 +173,41 @@ import statistics
 
 # 20. Escreva um programa que verifique se dois números fornecidos pelo usuário são diferentes.
 
-value1 = input("Digite um número: ")
-value2 = input("Digite outro número: ")
+# value1 = input("Digite um número: ")
+# value2 = input("Digite outro número: ")
 
-result_diff_test = value1 != value2
+# result_diff_test = value1 != value2
 
-print(f"{value1} differs from {value2} statement is: {result_diff_test}")
+# print(f"{value1} differs from {value2} statement is: {result_diff_test}")
 
 # #### try-except e if
 
 # 21: Conversor de Temperatura
+
+# Escreva um programa que converta a temperatura de Celsius para Fahrenheit. 
+# O programa deve solicitar ao usuário a temperatura em Celsius e, utilizando try-except, garantir que a entrada seja numérica, tratando qualquer ValueError. 
+# Imprima o resultado em Fahrenheit ou uma mensagem de erro se a entrada não for válida.
+
+# try:
+#     temp_celsius = float(input("Digite uma temperatura em Celsius: "))
+#     temp_fahrenheit = (temp_celsius*(9/5)) + 32
+#     print(f"{temp_celsius}°C equivale à {temp_fahrenheit:.2f}°F")
+# except ValueError:
+#     print("A temperatura deve ser um número")
+
 # 22: Verificador de Palíndromo
+
+# Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
+# Utilize try-except para garantir que a entrada seja uma string. Dica: Utilize a função isinstance() para verificar o tipo da entrada.
+
+# word_user = input("Digite uma palavra: ")
+# rev = ''.join(reversed(word_user))
+# if word_user == rev:
+#     print("É um palíndromo")
+# else:
+#     print("Não é um palíndromo")
+
+
 # 23: Calculadora Simples
 # 24: Classificador de Números
 # 25: Conversão de Tipo com Validação
