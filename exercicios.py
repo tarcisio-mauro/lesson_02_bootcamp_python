@@ -200,6 +200,7 @@ import statistics
 # Crie um programa que verifica se uma palavra ou frase é um palíndromo (lê-se igualmente de trás para frente, desconsiderando espaços e pontuações). 
 # Utilize try-except para garantir que a entrada seja uma string. Dica: Utilize a função isinstance() para verificar o tipo da entrada.
 
+# My solution
 # word_user = input("Digite uma palavra: ")
 # rev = ''.join(reversed(word_user))
 # if word_user == rev:
@@ -207,7 +208,87 @@ import statistics
 # else:
 #     print("Não é um palíndromo")
 
+# JD Solution
+# entrada = input("Digite uma palavra ou frase: ")
+# if isinstance(entrada, str):
+#     formatado = entrada.replace(" ", "").lower()
+#     if formatado == formatado[::-1]:
+#         print("É um palíndromo.")
+#     else:
+#         print("Não é um palíndromo.")
+# else:
+#     print("Entrada inválida. Por favor, digite uma palavra ou frase.")
+
 
 # 23: Calculadora Simples
+
+# My Solution
+# try:
+#     num1 = float(input("Digite um número: "))
+#     num2 = float(input("Digite mais um número: "))
+#     operador = input("Digite um dos operadores indicados (+,-,*,/): ")
+    
+#     if operador == "+":
+#         soma = num1 + num2
+#         print(f"O resultado da soma é: {soma}")
+#     elif operador == "-":
+#         subtracao = num1 - num2
+#         print(f"O resultado da subtração é: {subtracao}")
+#     elif operador == "*":
+#         multiplicacao = num1 * num2
+#         print(f"O resultado da multiplicação é: {multiplicacao}")
+#     elif operador == "/" and num2 != 0:
+#         divisao = num1 / num2
+#         print(f"O resultado da divisão é: {divisao}")
+#     else:
+#         print("Operador inválido ou divisão por zero.")
+# except ValueError:
+#     print("Por favor, digite um número para os dois primeiros campos.")
+
+# JD Solution
+# try:
+#     num1 = float(input("Digite o primeiro número: "))
+#     num2 = float(input("Digite o segundo número: "))
+#     operador = input("Digite o operador (+, -, *, /): ")
+#     if operador == '+':
+#         resultado = num1 + num2
+#     elif operador == '-':
+#         resultado = num1 - num2
+#     elif operador == '*':
+#         resultado = num1 * num2
+#     elif operador == '/' and num2 != 0:
+#         resultado = num1 / num2
+#     else:
+#         print("Operador inválido ou divisão por zero.")
+#     print("Resultado:", resultado)
+# except ValueError:
+#     print("Erro: Entrada inválida. Certifique-se de inserir números.")
+
+
 # 24: Classificador de Números
+
+# Tell if the number is positive, negative or zero, and also if it's even or odd
+
+# My Solution
+
+user_number = float(input("Digite um número: "))
+
+try:
+    if user_number > 0:
+        sign = "positive"
+    elif user_number < 0:
+        sign = "negative"
+    else:
+        sign = "not positive nor negative"
+
+    if user_number % 2 == 0:
+        even_odd = "even"
+    else:
+        even_odd = "odd"
+
+    print(f"{user_number} is {sign}, and it's also an {even_odd} number.")
+except ValueError:
+    print("Please insert a valid number.")
+
+
 # 25: Conversão de Tipo com Validação
