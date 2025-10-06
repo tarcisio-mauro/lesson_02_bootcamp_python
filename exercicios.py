@@ -271,24 +271,37 @@ import statistics
 
 # My Solution
 
-user_number = float(input("Digite um número: "))
+# user_number = float(input("Digite um número: "))
 
-try:
-    if user_number > 0:
-        sign = "positive"
-    elif user_number < 0:
-        sign = "negative"
-    else:
-        sign = "not positive nor negative"
+# try:
+#     if user_number > 0:
+#         sign = "positive"
+#     elif user_number < 0:
+#         sign = "negative"
+#     else:
+#         sign = "not positive nor negative"
 
-    if user_number % 2 == 0:
-        even_odd = "even"
-    else:
-        even_odd = "odd"
+#     if user_number % 2 == 0:
+#         even_odd = "even"
+#     else:
+#         even_odd = "odd"
 
-    print(f"{user_number} is {sign}, and it's also an {even_odd} number.")
-except ValueError:
-    print("Please insert a valid number.")
+#     print(f"{user_number} is {sign}, and it's also an {even_odd} number.")
+# except ValueError:
+#     print("Please insert a valid number.")
 
 
 # 25: Conversão de Tipo com Validação
+
+# user_list = input("Insira uma lista de números separados por vírgula: ")
+# split_user_list = int(user_list.split(","))
+
+# try:
+# see how to print the whole list independent of how many numbers
+# print(f"Dia: {split_user_list[0]}")
+# print(f"Mês: {split_user_list[1]}")
+# print(f"Ano: {split_user_list[2]}")
+
+# except
+# add some except clause in case the number is not integer
+
