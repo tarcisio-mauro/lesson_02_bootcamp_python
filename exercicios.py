@@ -293,15 +293,13 @@ import statistics
 
 # 25: Conversão de Tipo com Validação
 
-# user_list = input("Insira uma lista de números separados por vírgula: ")
-# split_user_list = int(user_list.split(","))
-
+# entrada_lista = input("Digite uma lista de números separados por vírgula: ")
+# numeros_str = entrada_lista.split(",")
+# numeros_int = []
 # try:
-# see how to print the whole list independent of how many numbers
-# print(f"Dia: {split_user_list[0]}")
-# print(f"Mês: {split_user_list[1]}")
-# print(f"Ano: {split_user_list[2]}")
-
-# except
-# add some except clause in case the number is not integer
+#     for num in numeros_str:
+#         numeros_int.append(int(num.strip()))
+#     print("Lista de inteiros:", numeros_int)
+# except ValueError:
+#     print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
 
