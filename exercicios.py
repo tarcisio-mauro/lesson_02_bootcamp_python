@@ -303,3 +303,37 @@ import statistics
 # except ValueError:
 #     print("Erro: certifique-se de que todos os elementos são números inteiros válidos.")
 
+### Desafio - Refatorar o projeto da aula anterior evitando Bugs!
+
+# 1) Solicita ao usuário que digite seu nome
+
+# 2) Solicita ao usuário que digite o valor do seu salário
+# Converte a entrada para um número de ponto flutuante
+
+# 3) Solicita ao usuário que digite o valor do bônus recebido
+# Converte a entrada para um número de ponto flutuante
+
+# 4) Calcule o valor do bônus final
+
+# 5) Imprime a mensagem personalizada incluindo o nome do usuário, salário e bônus
+
+# Bônus: Quantos bugs e riscos você consegue identificar nesse programa?
+
+## Solution
+
+# nome_usuario = str(input("Digite seu nome: "))
+# salario_usuario = float(input("Digite o valor do seu salário: "))
+# bonus_usuario = float(input("Digite o valor do seu bônus recebido: "))
+
+# bonus_final = 1000 + (salario_usuario * bonus_usuario)
+
+# print(f"{nome_usuario}, com um salário de ${salario_usuario} o valor do seu bônus final é ${bonus_final}.")
+
+## Possible errors
+
+# Non-string name?
+# Unformatted name (not very prio though)
+# Non-number salary or bonus
+
+# Next: check the solution video
+
