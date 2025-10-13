@@ -325,28 +325,45 @@ elif nome_usuario.isspace():
 try:
     salario_usuario = float(input("Digite o seu salário: "))
 except ValueError:
-    print("O salário precisa ser um número. Por favor, tente novamente.")
+    print("O salário deve ser um número. Por favor, tente novamente.") # For strings, empty, or space only
 
 # Handling errors
 try:
     if salario_usuario == 0:
-        print("Você digitou zero para o seu salário. Por favor, tente novamente.")
+        print("O salário deve ser maior do que zero. Por favor, tente novamente.") # For zero salary
+        exit()
+    if salario_usuario < 0:
+        print("O salário deve ser maior do que zero. Por favor, tente novamente.") # For negative
         exit()
 except NameError:
     pass
 
-# is string
-# is zero
-# is empty
-# is space
-
 
 # 3) Solicita ao usuário que digite o valor do bônus recebido
 # Converte a entrada para um número de ponto flutuante
+try:
+    bonus_usuario = float(input("Digite o seu bônus em porcentagem: "))
+except ValueError:
+    print("O bônus deve ser um número. Por favor, tente novamente.") # For strings, empty, or space only
+
+# Handling errors
+try:
+    if bonus_usuario == 0:
+        print("O bônus deve ser maior do que zero. Por favor, tente novamente.") # For zero
+        exit()
+    elif bonus_usuario < 0:
+        print("O bônus deve ser maior do que zero. Por favor, tente novamente.") # For negative
+        exit()
+except NameError:
+    pass
+
+bonus_usuario_pct = float(bonus_usuario / 100)
 
 # 4) Calcule o valor do bônus final
+kpi_bonus = 1000 + salario_usuario * bonus_usuario_pct
 
 # 5) Imprime a mensagem personalizada incluindo o nome do usuário, salário e bônus
+print(f"{nome_usuario}, com um salário de R${salario_usuario} e bônus de {bonus_usuario}%, o seu Bônus KPI total é de R${kpi_bonus}.")
 
 # Bônus: Quantos bugs e riscos você consegue identificar nesse programa?
 
