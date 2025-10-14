@@ -361,9 +361,10 @@ bonus_usuario_pct = float(bonus_usuario / 100)
 
 # 4) Calcule o valor do bônus final
 kpi_bonus = 1000 + salario_usuario * bonus_usuario_pct
+salario_total = salario_usuario + kpi_bonus
 
 # 5) Imprime a mensagem personalizada incluindo o nome do usuário, salário e bônus
-print(f"{nome_usuario}, com um salário de R${salario_usuario} e bônus de {bonus_usuario}%, o seu Bônus KPI total é de R${kpi_bonus}.")
+print(f"{nome_usuario}, com um salário de R${salario_usuario} e bônus de {bonus_usuario}%, o seu Bônus KPI é de R${kpi_bonus}. Seu salário total é R${salario_total}")
 
 # Bônus: Quantos bugs e riscos você consegue identificar nesse programa?
 
